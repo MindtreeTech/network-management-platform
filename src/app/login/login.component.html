@@ -1,0 +1,53 @@
+<div class="authincation ">
+        <div class="container ">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="authincation-content">
+                        <div class="row no-gutters">
+                            <div class="col-xl-12">
+                                <div class="auth-form">
+									<div class="text-center mb-3">
+										<a href="index.html"><img src="assets/images/brand/brand.png" width="50%" height="auto" alt=""></a>
+									</div>
+                                    <h4 class="text-center mb-4">Sign in your account</h4>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="mb-1 form-label">User ID</label>
+                                            <input type="email" class="form-control" [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
+                                        </div>
+                                        <div class="mb-3 position-relative">
+											<label class="mb-1 form-label">Password</label>
+											<input type={{passwordType}} id="dz-password" class="form-control" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+											<span class="show-pass eye" (click)="onPasswordTypeChanged()">
+											
+												<i class="fa fa-eye-slash"></i>
+												<i class="fa fa-eye"></i>
+											
+											</span>
+										</div>
+                                        <div class="mb-3 position-relative" *ngIf="isError">
+											<label class="mb-1 form-label text-danger">{{errorMessage}}</label>
+										</div>
+                                        <div class="form-row d-flex  flex-wrap justify-content-between mt-4 mb-2">
+                                            <div class="form-group">
+                                               <div class="form-check custom-checkbox ms-1">
+													<input type="checkbox" class="form-check-input" id="basic_checkbox_1">
+													<label class="form-check-label" for="basic_checkbox_1">Remember my preference</label>
+												</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="text-hover" href="/adminforgotpassword">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-block" (click)="onLogin()">Sign Me In</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

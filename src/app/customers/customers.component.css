@@ -1,0 +1,36 @@
+::ng-deep.data-picker-costem .dropdown-menu {
+    font-size: small !important;
+    border-radius: 0 !important;
+    padding: 8px !important;
+}
+
+::ng-deep.data-picker-costem .dropdown-menu .ngb-dp-header {
+    background-color: #fff !important;
+}
+
+::ng-deep.data-picker-costem .dropdown-menu .ngb-dp-month-name {
+    background-color: #fff !important;
+}
+
+::ng-deep.data-picker-costem .dropdown-menu .ngb-dp-weekdays {
+    border-bottom: 0px !important;
+    background-color: #fff !important;
+}
+
+::ng-deep.data-picker-costem .dropdown-menu .ngb-dp-weekday {
+    color: #8a8a8a !important;
+}
+
+::ng-deep.btn-light {
+
+    border-color: #c8c8c8;
+    color: #0e0e0e !important;
+}
+
+::ng-deep.btn-light:hover {
+    color: #fff !important;
+    background: var(--primary) !important;
+}
+::ng-deep.ngb-dp-day{
+    margin: 2px;
+}

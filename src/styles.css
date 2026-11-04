@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+th {
+    position: relative;
+    font-size: 0.875rem;
+    padding-right: 20px; /* Adjust based on icon size */
+    /*background-color: #fcf7f1;*/
+    border: 1px solid #ffffff;
+}
+th .sort-icon {
+    position: absolute;
+    right: 5px; /* Adjust based on desired spacing */
+    top: 50%;
+    transform: translateY(-50%);
+}
